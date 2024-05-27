@@ -159,10 +159,14 @@
                     <a href="{% url 'catalogue:index' %}" class="btn btn-primary btn-small" style="color:black;background-color: white;">
                         {% trans 'Home' %}
                     </a>
+                    <a href="{% url 'customer:summary' %}" class="btn btn-primary btn-small" style="color:black;background-color: white;">
+                        <i class="fas fa-user"></i> 
+                    </a>
                     <a href="{% url 'customer:logout' %}" class="btn btn-primary btn-small" style="color:black;background-color: white;">
                         {% trans 'Logout' %}
                     </a>
                 </div>
+            
             {% else %}
                 <div class="btn-nav ml-3">
                     <a href="{% url 'customer:login' %}" class="btn btn-primary btn-small" style="color:black;background-color: white;">
