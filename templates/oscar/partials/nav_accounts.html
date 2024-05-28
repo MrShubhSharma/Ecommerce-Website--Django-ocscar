@@ -123,7 +123,7 @@
                         {{ request.basket.total_excl_tax|currency:request.basket.currency }}
                     {% endif %}
                 {% else %}
-                    £0.00
+                ₹0.00
                 {% endif %}
                 <div class="btn-group ml-2">
                     <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='{% url 'basket:summary' %}';">
